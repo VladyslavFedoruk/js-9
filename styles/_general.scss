@@ -1,0 +1,29 @@
+.title {
+    font-family: 'Montserrat',
+        sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 61px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #F8F1EA;
+    position: absolute;
+    top: 120px;
+    max-width: 400px;
+
+    @media screen and (max-width: 889px) {
+        font-size: 26px;
+        max-width: 350px;
+    }
+
+    @media screen and (max-width: 670px) {
+        font-size: 20px;
+
+    }
+
+    @media screen and (max-width: 631px) {
+        font-size: 16px;
+        max-width: 210px;
+    }
+
+}
