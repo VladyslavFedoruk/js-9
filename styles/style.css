@@ -89,10 +89,9 @@ header {
 .menu > a {
   width: 182px;
   height: 34px;
-  cursor: url("./images/cursor_black.png"), auto;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
+  cursor: url("../images/cursor_black.png"), auto;
+  display: block;
+  margin-top: 15px;
 }
 @media screen and (max-width: 1105px) {
   .menu > a {
@@ -109,7 +108,7 @@ header {
   }
 }
 .menu-list__center {
-  cursor: url("./images/cursor_black.png"), auto;
+  cursor: url("../images/cursor_black.png"), auto;
   font-family: "Montserrat", sans-serif;
   display: flex;
   gap: 30px;
@@ -142,7 +141,7 @@ header {
   }
 }
 .menu li > a {
-  cursor: url("./images/cursor_black.png"), auto;
+  cursor: url("../images/cursor_black.png"), auto;
   color: #000000;
 }
 @media screen and (max-width: 777px) {
@@ -155,14 +154,32 @@ header {
   background: #F16A50;
 }
 .menu-list__right {
-  cursor: url("./images/cursor_black.png"), auto;
+  cursor: url("../images/cursor_black.png"), auto;
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
   align-content: center;
 }
+@media screen and (max-width: 777px) {
+  .menu-list__right {
+    gap: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.menu-list__right > li {
+  padding: 20px;
+}
+@media screen and (max-width: 889px) {
+  .menu-list__right > li {
+    padding: 25px;
+  }
+}
 .menu-list__right > li > a > svg {
-  cursor: url("./images/cursor_black.png"), auto;
+  cursor: url("../images/cursor_black.png"), auto;
 }
 @media screen and (max-width: 889px) {
   .menu-list__right > li > a > svg {
@@ -229,7 +246,7 @@ swiper-slide img {
   color: #FFFFFF;
   margin: 30px;
   margin-left: 80px;
-  cursor: url("./images/cursor.png"), auto;
+  cursor: url("../images/cursor.png"), auto;
 }
 @media screen and (max-width: 777px) {
   .hero-slider-first_button {
@@ -280,7 +297,7 @@ swiper-slide img {
   color: #FFFFFF;
   margin: 30px;
   margin-left: 90px;
-  cursor: url("./images/cursor.png"), auto;
+  cursor: url("../images/cursor.png"), auto;
 }
 @media screen and (max-width: 777px) {
   .hero-slider-second_button {
@@ -331,7 +348,7 @@ swiper-slide img {
   color: #FFFFFF;
   margin: 30px;
   margin-left: 90px;
-  cursor: url("./images/cursor.png"), auto;
+  cursor: url("../images/cursor.png"), auto;
 }
 @media screen and (max-width: 777px) {
   .hero-slider-third_button {
@@ -422,7 +439,7 @@ swiper-slide img {
   top: 35%;
   left: -5%;
   border: none;
-  cursor: url("./images/cursor_black.png"), auto;
+  cursor: url("../images/cursor_black.png"), auto;
   background: url(/svg/prev.svg);
 }
 @media screen and (max-width: 1105px) {
@@ -458,7 +475,7 @@ swiper-slide img {
   top: 35%;
   right: -5%;
   border: none;
-  cursor: url("./images/cursor_black.png"), auto;
+  cursor: url("../images/cursor_black.png"), auto;
   background: url(/svg/next.svg);
 }
 @media screen and (max-width: 1105px) {
@@ -507,6 +524,8 @@ swiper-slide img {
   }
 }
 .products .products-slide_item--main_content > img {
+  display: block;
+  margin: 0 auto;
   width: 192px;
   height: 300px;
   margin-bottom: 18px;
@@ -561,7 +580,7 @@ swiper-slide img {
   width: 227px;
   height: 50px;
   background: none;
-  cursor: url("./images/cursor_black.png"), auto;
+  cursor: url("../images/cursor_black.png"), auto;
 }
 .list_button .products-button:hover {
   border: none;
@@ -596,7 +615,7 @@ swiper-slide img {
   top: -15%;
   left: -5%;
   border: none;
-  cursor: url("/images/cursor_black.png"), auto;
+  cursor: url("../images/cursor_black.png"), auto;
   background: url(/svg/prev.svg);
 }
 @media screen and (max-width: 1105px) {
@@ -633,7 +652,7 @@ swiper-slide img {
   top: -15%;
   right: -5%;
   border: none;
-  cursor: url("./images/cursor_black.png"), auto;
+  cursor: url("../images/cursor_black.png"), auto;
   background: url(/svg/next.svg);
 }
 @media screen and (max-width: 1105px) {
@@ -681,13 +700,13 @@ swiper-slide img {
   width: 150px;
   display: block;
   margin-bottom: 35px;
-  cursor: url("./images/cursor.png"), auto;
+  cursor: url("../images/cursor.png"), auto;
 }
 .footer .menu_list-item {
   margin-bottom: 10px;
 }
 .footer .menu_list-item > a {
-  cursor: url("./images/cursor.png"), auto;
+  cursor: url("../images/cursor.png"), auto;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 20px;
@@ -727,7 +746,7 @@ swiper-slide img {
   display: flex;
   gap: 29px;
   margin-bottom: 35px;
-  cursor: url("./images/cursor.png"), auto;
+  cursor: url("../images/cursor.png"), auto;
 }
 @media screen and (max-width: 458px) {
   .footer_content-right .socialMedia_list {
@@ -754,7 +773,7 @@ swiper-slide img {
   font-size: 26px;
   line-height: 32px;
   color: #F8F1EA;
-  cursor: url("./images/cursor.png"), auto;
+  cursor: url("../images/cursor.png"), auto;
 }
 @media screen and (max-width: 458px) {
   .footer_content-right .content-right-phone {
